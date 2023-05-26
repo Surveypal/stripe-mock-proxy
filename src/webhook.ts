@@ -13,7 +13,8 @@ const webhook = {
       const payload = JSON.stringify(event)
 
       const signature = stripe.webhooks.generateTestHeaderString({
-        payload: payload,
+        payload,
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         secret: config.stripe.signingSecret!,
       })
 

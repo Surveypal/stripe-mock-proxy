@@ -1,5 +1,5 @@
 import express from "express"
-import type { Express, Request } from "express"
+import type { Express } from "express"
 import morgan from "morgan"
 
 import webhook from "./webhook"

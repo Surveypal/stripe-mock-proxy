@@ -17,7 +17,7 @@ server {
         proxy_set_header Authorization $http_authorization;
         proxy_pass_header Authorization;
 
-        proxy_pass http://stripe-mock:12111;
+        proxy_pass ${STRIPE_MOCK_URL};
     }
 
     location /ping {

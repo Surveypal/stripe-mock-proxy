@@ -54,7 +54,7 @@ app.post("/v1/checkout/sessions", async (req, res) => {
       shipping_address: null,
       submit: null,
     },
-    customer: null,
+    customer: Date.now().toString(),
     customer_creation: null,
     customer_details: {
       address: null,
